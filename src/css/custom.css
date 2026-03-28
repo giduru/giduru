@@ -500,7 +500,7 @@
   background: var(--ifm-color-primary);
 }
 
-:root a:hover {
+:root a:not(.button):hover {
   color: var(--ifm-color-primary-dark);
 }
 
