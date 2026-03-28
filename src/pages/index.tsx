@@ -151,28 +151,23 @@ function Features(): ReactNode {
 function Philosophy(): ReactNode {
   return (
     <section className="philosophy">
+      <div className="philosophy__cuneiform">{'\u{12100}'} {'\u{12000}'}</div>
       <h2>file &gt; app</h2>
       <p>
-        Most finance apps trap your data in their database, in their format,
-        behind their paywall. If they shut down, your history goes with them.
+        Five thousand years ago, the Sumerians invented accounting with simple
+        marks on a durable medium. No black-box systems. No vendor lock-in.
+        Just a record that outlasts empires.
       </p>
       <p>
-        Giduru never owns your data. Your ledger is plain text on your filesystem.
-        Even if you never touch Giduru again, these free tools work with the
-        exact same files, forever:
+        Giduru carries that ethos forward. Your ledger is plain text —
+        human-readable, portable, and yours forever.
       </p>
-      <div className="tool-badges">
-        <a href="https://hledger.org" className="tool-badge" target="_blank" rel="noopener noreferrer">
-          hledger
-        </a>
-        <a href="https://ledger-cli.org" className="tool-badge" target="_blank" rel="noopener noreferrer">
-          ledger
-        </a>
-        <span className="tool-badge">any text editor</span>
-      </div>
-      <div className="philosophy__cta">
+      <div className="philosophy__links">
         <Link className="button button--primary button--lg" href="https://app.giduru.com?demo=1">
           Try the Demo
+        </Link>
+        <Link className="button button--outline button--lg" to="/philosophy">
+          Read the Philosophy
         </Link>
       </div>
     </section>

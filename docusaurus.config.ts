@@ -55,6 +55,11 @@ const config: Config = {
           label: 'Docs',
         },
         {
+          to: '/philosophy',
+          label: 'Philosophy',
+          position: 'left',
+        },
+        {
           href: 'https://app.giduru.com',
           label: 'Open App',
           position: 'right',
