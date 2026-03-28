@@ -109,11 +109,9 @@ function FileOverApp(): ReactNode {
         </p>
         <p>
           Giduru follows the same principle. Your ledger is a plain text file on
-          your filesystem. It works with{' '}
-          <a href="https://hledger.org" target="_blank" rel="noopener noreferrer">hledger</a>,{' '}
-          <a href="https://ledger-cli.org" target="_blank" rel="noopener noreferrer">ledger</a>,{' '}
-          Vim, VS Code, or any tool that can read text. Giduru is a better way
-          to work with these files — but it is never the <em>only</em> way.
+          your filesystem. Open it in Giduru, Vim, VS Code, or any tool that
+          can read text. Giduru is a better way to work with your ledger
+          files — but it is never the <em>only</em> way.
         </p>
         <p>
           This isn't a limitation. It's a guarantee: your financial history will
@@ -149,11 +147,11 @@ function FreeForever(): ReactNode {
   return (
     <section className="philosophy-page__section philosophy-page__section--alt">
       <div className="container philosophy-page__prose">
-        <h2>Free alternatives, forever</h2>
+        <h2>Compatible tools, forever</h2>
         <p>
-          Even if you never use Giduru, you can manage your finances with these
-          free, open-source tools. They read and write the exact same file
-          format:
+          Giduru uses plain-text ledger files. Because the format is open,
+          your data also works with these free, open-source tools — no
+          migration, no export:
         </p>
         <div className="philosophy-page__tools">
           <a href="https://hledger.org" className="philosophy-page__tool" target="_blank" rel="noopener noreferrer">
@@ -166,8 +164,8 @@ function FreeForever(): ReactNode {
           </a>
         </div>
         <p>
-          This is the promise of <strong>file &gt; app</strong>: the file
-          format is open, the tools are free, and your data is yours. Giduru
+          This is the promise of <strong>file &gt; app</strong>: the format
+          is open, compatible tools are free, and your data is yours. Giduru
           just makes working with it a better experience.
         </p>
 

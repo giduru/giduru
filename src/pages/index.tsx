@@ -12,7 +12,7 @@ function Hero(): ReactNode {
           Your finances. <em>Your files.</em> Your way.
         </p>
         <p className="hero__subtitle">
-          A personal finance app built on plain-text hledger files.
+          A personal finance app built on plain-text ledger files.
           No databases, no lock-in, no proprietary formats — just your
           ledger, on your machine, in your control.
         </p>
@@ -34,24 +34,24 @@ function Hero(): ReactNode {
               <span className="date">2026-03-25</span>{' '}
               <span className="desc">Farmer's Market</span>
             </div>
-            <div>
-              {'    '}<span className="account">expenses:food:groceries</span>
+            <div className="posting">
+              <span className="account">expenses:food:groceries</span>
               {'    '}<span className="amount">$42.50</span>
             </div>
-            <div>
-              {'    '}<span className="account">assets:checking</span>
+            <div className="posting">
+              <span className="account">assets:checking</span>
             </div>
             <div>&nbsp;</div>
             <div>
               <span className="date">2026-03-24</span>{' '}
               <span className="desc">Monthly Salary</span>
             </div>
-            <div>
-              {'    '}<span className="account">assets:checking</span>
+            <div className="posting">
+              <span className="account">assets:checking</span>
               {'           '}<span className="amount">$4,200.00</span>
             </div>
-            <div>
-              {'    '}<span className="account">income:salary</span>
+            <div className="posting">
+              <span className="account">income:salary</span>
             </div>
           </div>
         </div>
@@ -65,11 +65,11 @@ function HowItWorks(): ReactNode {
     {
       num: '1',
       title: 'Open a folder',
-      description: 'Point Giduru at any folder with hledger journal files. That folder is your vault.',
+      description: 'Point Giduru at any folder with your ledger files. That folder is your vault.',
     },
     {
       num: '2',
-      title: 'Edit your journals',
+      title: 'Edit your ledgers',
       description: 'Syntax highlighting, autocomplete, real-time validation, and vim keybindings. Errors caught as you type.',
     },
     {
@@ -102,7 +102,7 @@ function Features(): ReactNode {
     {
       title: 'Plain text, full control',
       description:
-        'Your financial data lives in hledger journal files — human-readable, git-friendly, and yours forever.',
+        'Your financial data lives in ledger files — human-readable, git-friendly, and yours forever.',
     },
     {
       title: 'Live analysis',
@@ -112,12 +112,12 @@ function Features(): ReactNode {
     {
       title: 'Editor you\'ll enjoy',
       description:
-        'CodeMirror-powered with hledger syntax highlighting, autocomplete, real-time validation, and vim keybindings.',
+        'CodeMirror-powered with syntax highlighting, autocomplete, real-time validation, and vim keybindings.',
     },
     {
       title: 'Vault-based workflow',
       description:
-        'Open a folder, edit your journals, and let Giduru resolve includes across files. Works with your existing setup.',
+        'Open a folder, edit your ledgers, and let Giduru resolve includes across files. Works with your existing setup.',
     },
     {
       title: 'You own your data',
@@ -127,7 +127,7 @@ function Features(): ReactNode {
     {
       title: 'No lock-in, ever',
       description:
-        'Same file format as hledger and ledger. Stop using Giduru any time — your data still works with free, open-source CLI tools.',
+        'Compatible with hledger and ledger. Stop using Giduru any time — your data still works with free, open-source CLI tools.',
     },
   ];
 
@@ -178,7 +178,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="Your finances, your files, your way"
-      description="A file-first personal finance app built on plain text. Own your data. Use hledger, ledger, or Giduru — your choice.">
+      description="A file-first personal finance app built on plain text. Own your data forever with Giduru.">
       <Hero />
       <main>
         <HowItWorks />

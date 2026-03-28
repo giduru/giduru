@@ -107,6 +107,7 @@
   line-height: 1.8;
 }
 
+.code-preview .posting { padding-left: 2em; }
 .code-preview .comment { color: var(--ifm-color-emphasis-500); }
 .code-preview .date { color: var(--ifm-color-primary); }
 .code-preview .desc { color: var(--ifm-color-emphasis-900); }
