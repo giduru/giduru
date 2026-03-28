@@ -116,6 +116,10 @@ function FileOverApp(): ReactNode {
         <p>
           This isn't a limitation. It's a guarantee: your financial history will
           never be held hostage by any single application, including ours.
+          We believe in{' '}
+          <a href="https://stephango.com/file-over-app" target="_blank" rel="noopener noreferrer">
+            file over app
+          </a>.
         </p>
 
         <div className="philosophy-page__comparison">
