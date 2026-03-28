@@ -99,7 +99,10 @@ function FileOverApp(): ReactNode {
         <h2>file &gt; app</h2>
         <p>
           Most finance apps own your data. They store it in their database, in
-          their format, behind their paywall. If they shut down, your history
+          their format, behind their paywall. If they{' '}
+          <a href="https://en.wikipedia.org/wiki/Intuit_Mint#Shut_down" target="_blank" rel="noopener noreferrer">
+            shut down
+          </a>, your history
           disappears. You're left exporting CSVs and hoping you got everything.
         </p>
         <p>
