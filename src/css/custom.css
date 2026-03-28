@@ -489,7 +489,7 @@
   margin-top: 2.5rem;
 }
 
-/* ── Light mode button fix ── */
+/* ── Light mode fixes ── */
 :root .button--outline {
   color: var(--ifm-color-primary-darkest);
   border-color: var(--ifm-color-primary);
@@ -497,6 +497,20 @@
 
 :root .button--outline:hover {
   color: #fff;
+  background: var(--ifm-color-primary);
+}
+
+:root a:hover {
+  color: var(--ifm-color-primary-dark);
+}
+
+:root .navbar__link:hover,
+:root .footer__link-item:hover {
+  color: var(--ifm-color-primary-dark);
+}
+
+:root .navbar__link--active {
+  color: var(--ifm-color-primary);
 }
 
 /* ── Navbar ── */
