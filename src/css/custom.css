@@ -404,6 +404,12 @@
   color: var(--ifm-color-emphasis-800);
 }
 
+.philosophy-page__quote cite {
+  font-size: 0.875rem;
+  font-style: normal;
+  color: var(--ifm-color-emphasis-800);
+}
+
 .philosophy-page__comparison {
   display: grid;
   grid-template-columns: 1fr 1fr;

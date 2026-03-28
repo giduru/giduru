@@ -47,6 +47,14 @@ function Origin(): ReactNode {
             </p>
           </div>
         </div>
+
+        <p>
+          The ancient temples of Egypt contain hieroglyphs chiseled in stone
+          thousands of years ago. The ideas those glyphs convey are more
+          important than the type of chisel used to carve them. The Sumerians
+          understood something we keep forgetting: the record matters more
+          than the tool.
+        </p>
       </div>
     </section>
   );
@@ -61,9 +69,18 @@ function WhySumerian(): ReactNode {
           Five thousand years ago, the Sumerians realized that memory is
           fallible, but a ledger is permanent. They didn't use complex
           black-box systems. They used simple marks on a durable medium.
+          No intermediary stood between a scribe and their record.
         </p>
         <p>
-          Giduru brings that same ethos to the digital age. By using plain
+          Today, most of the digital artifacts we create are out of our
+          control. They're stored on servers, in databases, gated behind
+          internet connections and logins to cloud services. The files on your
+          hard drive use proprietary formats that make them incompatible with
+          older systems and other tools. Your own financial history requires
+          someone else's permission to access.
+        </p>
+        <p>
+          Giduru brings the Sumerian ethos to the digital age. By using plain
           text, we ensure your financial data isn't trapped in a proprietary
           database or a fleeting file format. Like the clay tablets of
           Mesopotamia, plain text is:
@@ -72,15 +89,27 @@ function WhySumerian(): ReactNode {
         <div className="philosophy-page__pillars">
           <div className="philosophy-page__pillar">
             <h3>Human-readable</h3>
-            <p>No special software required to understand your own history.</p>
+            <p>
+              To read something written on paper, all you need is eyeballs.
+              To read a Giduru ledger, all you need is a text editor. Any
+              text editor. Forever.
+            </p>
           </div>
           <div className="philosophy-page__pillar">
             <h3>Durable</h3>
-            <p>It won't break when a company goes out of business or an API changes.</p>
+            <p>
+              It won't break when a company goes out of business, an API
+              changes, or a file format is deprecated. Plain text from the
+              1960s is still readable today.
+            </p>
           </div>
           <div className="philosophy-page__pillar">
             <h3>Portable</h3>
-            <p>Your data belongs to you, easily moved across any system or century.</p>
+            <p>
+              Your data belongs to you. Move it across any system, any
+              decade, any century. No export wizard. No migration tool.
+              Just copy the file.
+            </p>
           </div>
         </div>
 
@@ -98,31 +127,55 @@ function FileOverApp(): ReactNode {
       <div className="container philosophy-page__prose">
         <h2>file &gt; app</h2>
         <p>
-          Most finance apps own your data. They store it in their database, in
-          their format, behind their paywall. If they{' '}
+          Steph Ango, the CEO of Obsidian, put it simply:{' '}
+          <a href="https://stephango.com/file-over-app" target="_blank" rel="noopener noreferrer">
+            file over app
+          </a>{' '}
+          is a philosophy. If you want to create digital artifacts that last,
+          they must be files you can control, in formats that are easy to
+          retrieve and read. Use tools that give you this freedom.
+        </p>
+        <p>
+          It's also an appeal to tool makers: accept that all software is
+          ephemeral, and give people ownership over their data.
+        </p>
+        <p>
+          We take this seriously. In the fullness of time, the ledger files you
+          create are more important than Giduru itself. Apps are ephemeral. Your
+          files have a chance to last. We'd be deluding ourselves to think
+          Giduru will exist forever — but we've made sure your data will
+          outlive it.
+        </p>
+        <p>
+          Most finance apps don't think this way. They store your data in their
+          database, in their format, behind their paywall. When they{' '}
           <a href="https://en.wikipedia.org/wiki/Intuit_Mint#Shut_down" target="_blank" rel="noopener noreferrer">
             shut down
-          </a>, your history
-          disappears. You're left exporting CSVs and hoping you got everything.
+          </a>{' '}
+          — and they do — your history disappears. You're left exporting CSVs
+          and hoping you got everything. Millions of people lost years of
+          financial history when Mint closed its doors. Not because their data
+          was destroyed, but because it was never really theirs.
         </p>
         <p>
           The Sumerians didn't have this problem. Their records were etched into
           clay — no vendor, no subscription, no API key required to read them
-          five millennia later. The medium was the message.
+          five millennia later. The world is filled with ideas from generations
+          past, transmitted through clay tablets, manuscripts, paintings, and
+          tapestries. These are objects you can touch, hold, own, and preserve.
         </p>
         <p>
           Giduru follows the same principle. Your ledger is a plain text file on
           your filesystem. Open it in Giduru, Vim, VS Code, or any tool that
           can read text. Giduru is a better way to work with your ledger
-          files — but it is never the <em>only</em> way.
+          files — but it is never the <em>only</em> way. That's the point.
         </p>
         <p>
-          This isn't a limitation. It's a guarantee: your financial history will
-          never be held hostage by any single application, including ours.
-          We believe in{' '}
-          <a href="https://stephango.com/file-over-app" target="_blank" rel="noopener noreferrer">
-            file over app
-          </a>.
+          This isn't a limitation. It's a guarantee. Your financial history will
+          never be held hostage by any single application, including ours. If
+          you want your ledger to still be readable on a computer from the
+          2060s or 2160s, it matters that it can be read on a computer from
+          the 1960s. Plain text gives you that.
         </p>
 
         <div className="philosophy-page__comparison">
@@ -133,15 +186,17 @@ function FileOverApp(): ReactNode {
               <li>Requires the app to access your history</li>
               <li>Export is lossy and incomplete</li>
               <li>Shuts down = your data is gone</li>
+              <li>You need permission to see your own finances</li>
             </ul>
           </div>
           <div className="philosophy-page__comparison-col philosophy-page__comparison-col--highlight">
             <h3>Giduru</h3>
             <ul>
               <li>Data in plain text files you own</li>
-              <li>Readable with any text editor</li>
+              <li>Readable with any text editor, forever</li>
               <li>Nothing to export — the file <em>is</em> the data</li>
-              <li>Works with free CLI tools forever</li>
+              <li>Works with free CLI tools if Giduru disappears</li>
+              <li>Your finances are yours, no permission needed</li>
             </ul>
           </div>
         </div>
@@ -156,9 +211,10 @@ function FreeForever(): ReactNode {
       <div className="container philosophy-page__prose">
         <h2>Compatible tools, forever</h2>
         <p>
-          Giduru uses plain-text ledger files. Because the format is open,
-          your data also works with these free, open-source tools — no
-          migration, no export:
+          We build Giduru because we think it's the best way to work with your
+          ledger files. But we're not the only way, and we never want to be.
+          The file format is open. Your data works with these free, open-source
+          tools today, and it will work with whatever comes next:
         </p>
         <div className="philosophy-page__tools">
           <a href="https://hledger.org" className="philosophy-page__tool" target="_blank" rel="noopener noreferrer">
@@ -171,10 +227,26 @@ function FreeForever(): ReactNode {
           </a>
         </div>
         <p>
-          This is the promise of <strong>file &gt; app</strong>: the format
-          is open, compatible tools are free, and your data is yours. Giduru
-          just makes working with it a better experience.
+          This is the promise of <strong>file &gt; app</strong>. Not just that
+          you <em>can</em> leave, but that leaving is trivially easy. There's no
+          export step. There's no migration. Your files are already in the
+          format every compatible tool expects. You don't even have to stop
+          using Giduru — use it alongside anything else, editing the same files.
         </p>
+        <p>
+          We think the best way to earn your trust is to make sure you never
+          need to trust us at all.
+        </p>
+
+        <blockquote className="philosophy-page__quote">
+          All software is ephemeral. Give people ownership over their data.
+          <cite>
+            {' — '}
+            <a href="https://stephango.com/file-over-app" target="_blank" rel="noopener noreferrer">
+              Steph Ango
+            </a>
+          </cite>
+        </blockquote>
 
         <div className="philosophy-page__cta">
           <Link className="button button--primary button--lg" href="https://app.giduru.com?demo=1">
