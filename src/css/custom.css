@@ -1,11 +1,11 @@
 :root {
-  --ifm-color-primary: #0891b2;
-  --ifm-color-primary-dark: #07829f;
-  --ifm-color-primary-darker: #067a96;
-  --ifm-color-primary-darkest: #05657c;
-  --ifm-color-primary-light: #09a0c5;
-  --ifm-color-primary-lighter: #0aa8ce;
-  --ifm-color-primary-lightest: #0bbde8;
+  --ifm-color-primary: #0e7490;
+  --ifm-color-primary-dark: #0c6578;
+  --ifm-color-primary-darker: #0b5e71;
+  --ifm-color-primary-darkest: #094d5d;
+  --ifm-color-primary-light: #1083a8;
+  --ifm-color-primary-lighter: #118baf;
+  --ifm-color-primary-lightest: #14a0c9;
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
   --ifm-font-family-monospace: 'JetBrains Mono', ui-monospace, monospace;
@@ -58,7 +58,7 @@
   max-width: 540px;
   margin: 1rem auto 0;
   line-height: 1.7;
-  color: var(--ifm-color-emphasis-600);
+  color: var(--ifm-color-emphasis-800);
 }
 
 .hero-badge {
@@ -111,8 +111,11 @@
 .code-preview .comment { color: var(--ifm-color-emphasis-500); }
 .code-preview .date { color: var(--ifm-color-primary); }
 .code-preview .desc { color: var(--ifm-color-emphasis-900); }
-.code-preview .account { color: #a78bfa; }
-.code-preview .amount { color: #34d399; }
+.code-preview .account { color: #7c3aed; }
+.code-preview .amount { color: #059669; }
+
+[data-theme='dark'] .code-preview .account { color: #a78bfa; }
+[data-theme='dark'] .code-preview .amount { color: #34d399; }
 
 /* ── How it works ── */
 .how-it-works {
@@ -148,7 +151,7 @@
   height: 2rem;
   border-radius: 50%;
   background: var(--ifm-color-primary);
-  color: var(--ifm-background-color);
+  color: #fff;
   font-weight: 700;
   font-size: 0.875rem;
   margin-bottom: 0.75rem;
@@ -161,7 +164,7 @@
 
 .step p {
   font-size: 0.875rem;
-  color: var(--ifm-color-emphasis-700);
+  color: var(--ifm-color-emphasis-800);
   line-height: 1.6;
   margin: 0;
 }
@@ -201,7 +204,7 @@
 
 .feature-card p {
   font-size: 0.875rem;
-  color: var(--ifm-color-emphasis-700);
+  color: var(--ifm-color-emphasis-800);
   line-height: 1.6;
   margin: 0;
 }
@@ -224,7 +227,7 @@
 }
 
 .philosophy p {
-  color: var(--ifm-color-emphasis-700);
+  color: var(--ifm-color-emphasis-800);
   font-size: 1rem;
   line-height: 1.7;
   margin-bottom: 1rem;
@@ -244,7 +247,7 @@
   padding: 0.375rem 1rem;
   border: 1px solid var(--ifm-color-emphasis-200);
   border-radius: 0.5rem;
-  color: var(--ifm-color-emphasis-700);
+  color: var(--ifm-color-emphasis-800);
   text-decoration: none;
 }
 
@@ -315,7 +318,7 @@
 }
 
 .philosophy-page__prose p {
-  color: var(--ifm-color-emphasis-700);
+  color: var(--ifm-color-emphasis-800);
   font-size: 1rem;
   line-height: 1.8;
   margin-bottom: 1.25rem;
@@ -360,7 +363,7 @@
 
 .philosophy-page__root p {
   font-size: 0.875rem;
-  color: var(--ifm-color-emphasis-700);
+  color: var(--ifm-color-emphasis-800);
   line-height: 1.6;
   margin: 0;
 }
@@ -434,7 +437,7 @@
   margin: 0;
   padding-left: 1.25rem;
   font-size: 0.875rem;
-  color: var(--ifm-color-emphasis-700);
+  color: var(--ifm-color-emphasis-800);
   line-height: 1.8;
 }
 
@@ -475,7 +478,7 @@
 
 .philosophy-page__tool span {
   font-size: 0.8rem;
-  color: var(--ifm-color-emphasis-600);
+  color: var(--ifm-color-emphasis-800);
 }
 
 .philosophy-page__cta {
@@ -484,6 +487,16 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 2.5rem;
+}
+
+/* ── Light mode button fix ── */
+:root .button--outline {
+  color: var(--ifm-color-primary-darkest);
+  border-color: var(--ifm-color-primary);
+}
+
+:root .button--outline:hover {
+  color: #fff;
 }
 
 /* ── Navbar ── */
