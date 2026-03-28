@@ -126,11 +126,10 @@ function FileOverApp(): ReactNode {
       <div className="container philosophy-page__prose">
         <h2>file &gt; app</h2>
         <p>
-          Steph Ango, the CEO of Obsidian, put it simply:{' '}
           <a href="https://stephango.com/file-over-app" target="_blank" rel="noopener noreferrer">
-            file over app
+            File over app
           </a>{' '}
-          is a philosophy. If you want to create digital artifacts that last,
+          is a simple idea: if you want to create digital artifacts that last,
           they must be files you can control, in formats that are easy to
           retrieve and read. Use tools that give you this freedom.
         </p>
@@ -214,15 +213,15 @@ function NotVCware(): ReactNode {
           And it's incompatible with the way most software companies are built.
         </p>
         <p>
-          Steph Ango coined the term{' '}
+          There's a term for what happens when software is built to serve
+          investors instead of users:{' '}
           <a href="https://stephango.com/vcware" target="_blank" rel="noopener noreferrer">
             VCware
-          </a>{' '}
-          to describe what happens when software is built to serve investors
-          instead of users. The pattern is always the same: raise money,
-          subsidize pricing to acquire users, hoard their data to create
-          lock-in, paint an increasingly enormous vision to keep raising,
-          then exit. Get acquired or go public. Pay everyone back.
+          </a>.
+          The pattern is always the same: raise money, subsidize pricing to
+          acquire users, hoard their data to create lock-in, paint an
+          increasingly enormous vision to keep raising, then exit. Get
+          acquired or go public. Pay everyone back.
         </p>
         <p>
           In the short term, VCware is generous. Cheap or free products,
@@ -263,12 +262,6 @@ function NotVCware(): ReactNode {
         <blockquote className="philosophy-page__quote">
           If you have principles and enough patience, being 100% user-supported
           is by far the most fun way to build.
-          <cite>
-            {' '}
-            <a href="https://stephango.com/vcware" target="_blank" rel="noopener noreferrer">
-              Steph Ango
-            </a>
-          </cite>
         </blockquote>
       </div>
     </section>
@@ -310,12 +303,6 @@ function FreeForever(): ReactNode {
 
         <blockquote className="philosophy-page__quote">
           All software is ephemeral. Give people ownership over their data.
-          <cite>
-            {' '}
-            <a href="https://stephango.com/file-over-app" target="_blank" rel="noopener noreferrer">
-              Steph Ango
-            </a>
-          </cite>
         </blockquote>
 
         <div className="philosophy-page__cta">
