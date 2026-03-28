@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 9
 title: hledger Format
 description: A quick reference for the hledger journal format used by Giduru.
 ---

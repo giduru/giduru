@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 title: Core Concepts
 description: Key concepts behind Giduru's file-first approach.
 ---

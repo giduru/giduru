@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 10
 title: Alternatives
 description: Free tools you can use with the same file format. No lock-in, ever.
 ---

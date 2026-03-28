@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 title: Editor
 description: A CodeMirror-powered editor built for hledger journals.
 ---
@@ -25,9 +25,29 @@ As you type, Giduru validates your journal entries:
 
 Errors appear inline as you edit, so you catch mistakes immediately.
 
-## Multi-file editing
+## Tabs and columns
 
-Open multiple journal files in tabs. Giduru resolves `include` directives across files, so your analysis reflects the full picture even when your ledger spans many files.
+Open multiple journal files in tabs. Split the editor into side-by-side columns to view or edit two files at once. Giduru resolves `include` directives across files, so your analysis reflects the full picture even when your ledger spans many files.
+
+## Command palette
+
+Press `Cmd+Shift+P` (or `Ctrl+Shift+P`) to open the command palette. Search for any action, setting, or view by name.
+
+## File picker
+
+Press `Cmd+P` (or `Ctrl+P`) to quickly open any file in your vault by name. Fuzzy matching helps you find files fast, even in large vaults.
+
+## Hotkeys
+
+Common actions have keyboard shortcuts. Open the command palette and type "keyboard shortcuts" to see the full list. Hotkeys are customizable.
+
+## Theme
+
+Switch between light mode, dark mode, or follow your system preference. The editor theme updates to match.
+
+## LSP
+
+Giduru includes a built-in language server for hledger journals. It powers autocomplete, diagnostics, go-to-definition for accounts, and hover information. No external setup required.
 
 ## Vim keybindings
 

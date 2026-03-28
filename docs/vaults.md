@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 title: Vaults
 description: How Giduru works with folders of journal files.
 ---

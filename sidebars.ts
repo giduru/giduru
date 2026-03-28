@@ -5,12 +5,12 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Getting Started',
-      items: ['introduction', 'install', 'quickstart', 'concepts'],
+      items: ['introduction', 'install', 'features', 'quickstart', 'concepts'],
     },
     {
       type: 'category',
       label: 'Using Giduru',
-      items: ['editor', 'analysis', 'vaults'],
+      items: ['editor', 'analysis', 'vaults', 'plugins'],
     },
     {
       type: 'category',
