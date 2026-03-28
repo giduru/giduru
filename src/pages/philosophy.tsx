@@ -148,14 +148,13 @@ function FileOverApp(): ReactNode {
         </p>
         <p>
           Most finance apps don't think this way. They store your data in their
-          database, in their format, behind their paywall. When they{' '}
-          <a href="https://en.wikipedia.org/wiki/Intuit_Mint#Shut_down" target="_blank" rel="noopener noreferrer">
-            shut down
-          </a>{' '}
-          — and they do — your history disappears. You're left exporting CSVs
-          and hoping you got everything. Millions of people lost years of
-          financial history when Mint closed its doors. Not because their data
-          was destroyed, but because it was never really theirs.
+          database, in their format, behind their paywall. And they shut down.
+          {' '}<a href="https://en.wikipedia.org/wiki/Intuit_Mint#Shut_down" target="_blank" rel="noopener noreferrer">Mint</a>,{' '}
+          <a href="https://en.wikipedia.org/wiki/Microsoft_Money#Discontinuation_of_Money" target="_blank" rel="noopener noreferrer">Microsoft Money</a>,{' '}
+          <a href="https://en.wikipedia.org/wiki/Wesabe" target="_blank" rel="noopener noreferrer">Wesabe</a>{' '}
+          — the graveyard of finance apps is long. Every time, millions of
+          people lost years of financial history. Not because their data was
+          destroyed, but because it was never really theirs.
         </p>
         <p>
           The Sumerians didn't have this problem. Their records were etched into
