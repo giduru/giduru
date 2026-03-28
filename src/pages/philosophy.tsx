@@ -205,9 +205,80 @@ function FileOverApp(): ReactNode {
   );
 }
 
-function FreeForever(): ReactNode {
+function NotVCware(): ReactNode {
   return (
     <section className="philosophy-page__section philosophy-page__section--alt">
+      <div className="container philosophy-page__prose">
+        <h2>Not VCware</h2>
+        <p>
+          File over app isn't just a technical choice. It's a business one.
+          And it's incompatible with the way most software companies are built.
+        </p>
+        <p>
+          Steph Ango coined the term{' '}
+          <a href="https://stephango.com/vcware" target="_blank" rel="noopener noreferrer">
+            VCware
+          </a>{' '}
+          to describe what happens when software is built to serve investors
+          instead of users. The pattern is always the same: raise money,
+          subsidize pricing to acquire users, hoard their data to create
+          lock-in, paint an increasingly enormous vision to keep raising,
+          then exit — get acquired or go public — to pay everyone back.
+        </p>
+        <p>
+          In the short term, VCware is generous. Cheap or free products,
+          slick onboarding. But it comes at a cost you don't see: your data
+          is the collateral. Once you're in, you can't get out. And as the
+          company chases growth to satisfy investors, what starts as a useful
+          app becomes burdened with features nobody asked for, integrations
+          nobody wanted, and pricing nobody agreed to.
+        </p>
+        <p>
+          Nine out of ten startups fail. That's not a bug — it's the math of
+          a VC portfolio. The ones that succeed big pay for the ones that
+          don't. Venture capital creates unavoidable pressure to go big or go
+          broke. Your data is along for that ride whether you like it or not.
+        </p>
+        <p>
+          Giduru is not VCware. We don't want to be. We want to stay small.
+          We follow strict principles that we refuse to compromise. We don't
+          need VC money because the architecture makes it unnecessary — when
+          your data is plain text on your filesystem, there's nothing to
+          hoard, nothing to lock in, and no leverage to extract.
+        </p>
+        <p>
+          It is now possible for tiny teams to make principled software that
+          millions of people use, unburdened by investors. Software that puts
+          people in control of their data, their privacy, their wellbeing.
+          These principles can be irrevocably built into the architecture of
+          the app — not as a policy that can be reversed, but as a technical
+          reality that can't.
+        </p>
+        <p>
+          Giduru will not exist forever. No app will. But your ledger files
+          will. VCware is built with a five-year horizon. We're building for
+          decades. The difference is that when we're gone, you won't even
+          notice — because your data never depended on us in the first place.
+        </p>
+
+        <blockquote className="philosophy-page__quote">
+          If you have principles and enough patience, being 100% user-supported
+          is by far the most fun way to build.
+          <cite>
+            {' — '}
+            <a href="https://stephango.com/vcware" target="_blank" rel="noopener noreferrer">
+              Steph Ango
+            </a>
+          </cite>
+        </blockquote>
+      </div>
+    </section>
+  );
+}
+
+function FreeForever(): ReactNode {
+  return (
+    <section className="philosophy-page__section">
       <div className="container philosophy-page__prose">
         <h2>Compatible tools, forever</h2>
         <p>
@@ -271,6 +342,7 @@ export default function Philosophy(): ReactNode {
         <Origin />
         <WhySumerian />
         <FileOverApp />
+        <NotVCware />
         <FreeForever />
       </main>
     </Layout>
