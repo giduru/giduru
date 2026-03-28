@@ -92,7 +92,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--ifm-color-emphasis-500);
+  color: var(--ifm-color-emphasis-800);
   margin-bottom: 0.75rem;
 }
 
@@ -108,7 +108,7 @@
 }
 
 .code-preview .posting { padding-left: 2em; }
-.code-preview .comment { color: var(--ifm-color-emphasis-500); }
+.code-preview .comment { color: var(--ifm-color-emphasis-700); }
 .code-preview .date { color: var(--ifm-color-primary); }
 .code-preview .desc { color: var(--ifm-color-emphasis-900); }
 .code-preview .account { color: #7c3aed; }
