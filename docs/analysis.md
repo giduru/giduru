@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 title: Analysis Views
 description: Built-in financial analysis that updates live as you edit.
 ---

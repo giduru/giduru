@@ -22,6 +22,7 @@ Giduru is different. Your ledger files are plain text on your filesystem. They w
 - **You own your data.** No cloud sync, no accounts, no tracking. Giduru reads files from your disk and never phones home.
 - **No lock-in.** Uses the same format as hledger and ledger. Stop using Giduru any time. Your data still works with free CLI tools.
 - **Live analysis.** Net worth charts, spending treemaps, recurring transaction detection, and duplicate warnings. Computed live as you edit.
+- **Runs everywhere.** iOS, Android, web, desktop, CLI, and PWA. Same ledger files, every platform.
 
 ## How it works
 

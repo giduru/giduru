@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 title: Editor
 description: A CodeMirror-powered editor built for hledger journals.
 ---

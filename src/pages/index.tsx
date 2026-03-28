@@ -13,6 +13,7 @@ function Hero(): ReactNode {
         </p>
         <p className="hero__subtitle">
           A personal finance app built on plain-text ledger files.
+          Ships on iOS, Android, web, desktop, CLI, and as a PWA.
           No databases, no lock-in, no proprietary formats. Just your
           ledger, on your machine, in your control.
         </p>
@@ -123,6 +124,11 @@ function Features(): ReactNode {
       title: 'You own your data',
       description:
         'No cloud sync, no accounts, no tracking. Giduru reads files from your disk and never phones home.',
+    },
+    {
+      title: 'Runs everywhere',
+      description:
+        'iOS, Android, web, desktop, CLI, and PWA. Same ledger files, every platform.',
     },
     {
       title: 'No lock-in, ever',
