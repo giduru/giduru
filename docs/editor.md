@@ -10,7 +10,7 @@ Giduru's editor is built on [CodeMirror 6](https://codemirror.net/) with a custo
 
 ## Syntax highlighting
 
-The editor understands hledger syntax — dates, descriptions, account names, amounts, comments, directives, and tags are all highlighted distinctly.
+The editor understands hledger syntax. Dates, descriptions, account names, amounts, comments, directives, and tags are all highlighted distinctly.
 
 ## Autocomplete
 
@@ -19,9 +19,9 @@ Start typing an account name and the editor suggests completions based on accoun
 ## Real-time validation
 
 As you type, Giduru validates your journal entries:
-- **Syntax errors** — malformed dates, unbalanced transactions, invalid amounts
-- **Accounting errors** — transactions that don't balance, undeclared accounts (in strict mode)
-- **Missing amounts** — automatic inference of the balancing amount
+- **Syntax errors.** Malformed dates, unbalanced transactions, invalid amounts.
+- **Accounting errors.** Transactions that don't balance, undeclared accounts (in strict mode).
+- **Missing amounts.** Automatic inference of the balancing amount.
 
 Errors appear inline as you edit, so you catch mistakes immediately.
 

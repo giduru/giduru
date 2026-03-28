@@ -23,7 +23,7 @@ Don't have any journal files yet? Giduru can generate a starter ledger for you w
 The editor supports:
 - **Syntax highlighting** for hledger journal format
 - **Autocomplete** for account names and descriptions
-- **Real-time validation** — errors are highlighted as you type
+- **Real-time validation.** Errors are highlighted as you type
 - **Multi-file editing** with tabs
 - **Vim keybindings** (optional)
 

@@ -23,8 +23,8 @@ function Origin(): ReactNode {
         <h2>The name</h2>
         <p>
           <strong>Giduru</strong> is a tribute to the very origins of human
-          accounting. The name is derived from two Sumerian roots that represent
-          the dawn of the written record:
+          accounting. The name comes from two Sumerian roots at the dawn of
+          the written record:
         </p>
 
         <div className="philosophy-page__roots">
@@ -32,18 +32,17 @@ function Origin(): ReactNode {
             <div className="philosophy-page__glyph">{'\u{12100}'}</div>
             <h3>Gi</h3>
             <p>
-              The reed stylus used by ancient scribes to mark records into clay.
-              It represents the tool of clarity and the act of documentation —
-              the original "keyboard."
+              The reed stylus ancient scribes used to mark records into clay.
+              The tool of clarity. The act of documentation. The original
+              keyboard.
             </p>
           </div>
           <div className="philosophy-page__root">
             <div className="philosophy-page__glyph">{'\u{12000}'}</div>
             <h3>Duru</h3>
             <p>
-              A term for something "fresh," "damp," or "vibrant." In the context
-              of the first ledgers, it referred to the endurance of the
-              record — data that stays live and relevant.
+              "Fresh," "damp," "vibrant." In the context of the first ledgers,
+              it meant a record that endures. Data that stays live and relevant.
             </p>
           </div>
         </div>
@@ -73,9 +72,9 @@ function WhySumerian(): ReactNode {
         </p>
         <p>
           Today, most of the digital artifacts we create are out of our
-          control. They're stored on servers, in databases, gated behind
-          internet connections and logins to cloud services. The files on your
-          hard drive use proprietary formats that make them incompatible with
+          control. Stored on servers, in databases, gated behind internet
+          connections and logins to cloud services. The files on your hard
+          drive use proprietary formats that make them incompatible with
           older systems and other tools. Your own financial history requires
           someone else's permission to access.
         </p>
@@ -98,9 +97,9 @@ function WhySumerian(): ReactNode {
           <div className="philosophy-page__pillar">
             <h3>Durable</h3>
             <p>
-              It won't break when a company goes out of business, an API
-              changes, or a file format is deprecated. Plain text from the
-              1960s is still readable today.
+              It won't break when a company folds, an API changes, or a
+              file format gets deprecated. Plain text from the 1960s is
+              still readable today.
             </p>
           </div>
           <div className="philosophy-page__pillar">
@@ -141,10 +140,10 @@ function FileOverApp(): ReactNode {
         </p>
         <p>
           We take this seriously. In the fullness of time, the ledger files you
-          create are more important than Giduru itself. Apps are ephemeral. Your
-          files have a chance to last. We'd be deluding ourselves to think
-          Giduru will exist forever — but we've made sure your data will
-          outlive it.
+          create are more important than Giduru itself. Apps are ephemeral.
+          Your files have a chance to last. We'd be deluding ourselves to think
+          Giduru will exist forever, but we've made sure your data will outlive
+          it.
         </p>
         <p>
           Most finance apps don't think this way. They store your data in their
@@ -152,14 +151,14 @@ function FileOverApp(): ReactNode {
           {' '}<a href="https://en.wikipedia.org/wiki/Intuit_Mint#Shut_down" target="_blank" rel="noopener noreferrer">Mint</a>,{' '}
           <a href="https://en.wikipedia.org/wiki/Microsoft_Money#Discontinuation_of_Money" target="_blank" rel="noopener noreferrer">Microsoft Money</a>,{' '}
           <a href="https://en.wikipedia.org/wiki/Wesabe" target="_blank" rel="noopener noreferrer">Wesabe</a>,{' '}
-          <a href="https://en.wikipedia.org/wiki/BillGuard" target="_blank" rel="noopener noreferrer">BillGuard</a>{' '}
-          — the graveyard of finance apps is long. Every time, millions of
+          <a href="https://en.wikipedia.org/wiki/BillGuard" target="_blank" rel="noopener noreferrer">BillGuard</a>.
+          The graveyard of finance apps is long. Every time, millions of
           people lost years of financial history. Not because their data was
           destroyed, but because it was never really theirs.
         </p>
         <p>
           The Sumerians didn't have this problem. Their records were etched into
-          clay — no vendor, no subscription, no API key required to read them
+          clay. No vendor, no subscription, no API key required to read them
           five millennia later. The world is filled with ideas from generations
           past, transmitted through clay tablets, manuscripts, paintings, and
           tapestries. These are objects you can touch, hold, own, and preserve.
@@ -168,7 +167,7 @@ function FileOverApp(): ReactNode {
           Giduru follows the same principle. Your ledger is a plain text file on
           your filesystem. Open it in Giduru, Vim, VS Code, or any tool that
           can read text. Giduru is a better way to work with your ledger
-          files — but it is never the <em>only</em> way. That's the point.
+          files, but it is never the <em>only</em> way. That's the point.
         </p>
         <p>
           This isn't a limitation. It's a guarantee. Your financial history will
@@ -194,7 +193,7 @@ function FileOverApp(): ReactNode {
             <ul>
               <li>Data in plain text files you own</li>
               <li>Readable with any text editor, forever</li>
-              <li>Nothing to export — the file <em>is</em> the data</li>
+              <li>Nothing to export. The file <em>is</em> the data</li>
               <li>Works with free CLI tools if Giduru disappears</li>
               <li>Your finances are yours, no permission needed</li>
             </ul>
@@ -223,7 +222,7 @@ function NotVCware(): ReactNode {
           instead of users. The pattern is always the same: raise money,
           subsidize pricing to acquire users, hoard their data to create
           lock-in, paint an increasingly enormous vision to keep raising,
-          then exit — get acquired or go public — to pay everyone back.
+          then exit. Get acquired or go public. Pay everyone back.
         </p>
         <p>
           In the short term, VCware is generous. Cheap or free products,
@@ -234,7 +233,7 @@ function NotVCware(): ReactNode {
           nobody wanted, and pricing nobody agreed to.
         </p>
         <p>
-          Nine out of ten startups fail. That's not a bug — it's the math of
+          Nine out of ten startups fail. That's not a bug, it's the math of
           a VC portfolio. The ones that succeed big pay for the ones that
           don't. Venture capital creates unavoidable pressure to go big or go
           broke. Your data is along for that ride whether you like it or not.
@@ -242,7 +241,7 @@ function NotVCware(): ReactNode {
         <p>
           Giduru is not VCware. We don't want to be. We want to stay small.
           We follow strict principles that we refuse to compromise. We don't
-          need VC money because the architecture makes it unnecessary — when
+          need VC money because the architecture makes it unnecessary. When
           your data is plain text on your filesystem, there's nothing to
           hoard, nothing to lock in, and no leverage to extract.
         </p>
@@ -251,21 +250,21 @@ function NotVCware(): ReactNode {
           millions of people use, unburdened by investors. Software that puts
           people in control of their data, their privacy, their wellbeing.
           These principles can be irrevocably built into the architecture of
-          the app — not as a policy that can be reversed, but as a technical
-          reality that can't.
+          the app. Not as a policy that can be reversed, but as a technical
+          reality that can't be.
         </p>
         <p>
           Giduru will not exist forever. No app will. But your ledger files
           will. VCware is built with a five-year horizon. We're building for
           decades. The difference is that when we're gone, you won't even
-          notice — because your data never depended on us in the first place.
+          notice, because your data never depended on us in the first place.
         </p>
 
         <blockquote className="philosophy-page__quote">
           If you have principles and enough patience, being 100% user-supported
           is by far the most fun way to build.
           <cite>
-            {' — '}
+            {' '}
             <a href="https://stephango.com/vcware" target="_blank" rel="noopener noreferrer">
               Steph Ango
             </a>
@@ -302,7 +301,7 @@ function FreeForever(): ReactNode {
           you <em>can</em> leave, but that leaving is trivially easy. There's no
           export step. There's no migration. Your files are already in the
           format every compatible tool expects. You don't even have to stop
-          using Giduru — use it alongside anything else, editing the same files.
+          using Giduru. Use it alongside anything else, editing the same files.
         </p>
         <p>
           We think the best way to earn your trust is to make sure you never
@@ -312,7 +311,7 @@ function FreeForever(): ReactNode {
         <blockquote className="philosophy-page__quote">
           All software is ephemeral. Give people ownership over their data.
           <cite>
-            {' — '}
+            {' '}
             <a href="https://stephango.com/file-over-app" target="_blank" rel="noopener noreferrer">
               Steph Ango
             </a>

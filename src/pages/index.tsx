@@ -13,7 +13,7 @@ function Hero(): ReactNode {
         </p>
         <p className="hero__subtitle">
           A personal finance app built on plain-text ledger files.
-          No databases, no lock-in, no proprietary formats — just your
+          No databases, no lock-in, no proprietary formats. Just your
           ledger, on your machine, in your control.
         </p>
         <div className="hero-buttons">
@@ -75,7 +75,7 @@ function HowItWorks(): ReactNode {
     {
       num: '3',
       title: 'See your finances',
-      description: 'Net worth charts, spending treemaps, recurring patterns, and duplicate detection — all live, all local.',
+      description: 'Net worth charts, spending treemaps, recurring patterns, and duplicate detection. All live, all local.',
     },
   ];
 
@@ -102,12 +102,12 @@ function Features(): ReactNode {
     {
       title: 'Plain text, full control',
       description:
-        'Your financial data lives in ledger files — human-readable, git-friendly, and yours forever.',
+        'Your financial data lives in ledger files. Human-readable, git-friendly, and yours forever.',
     },
     {
       title: 'Live analysis',
       description:
-        'Net worth charts, spending treemaps, recurring transaction detection, and duplicate warnings — computed live as you edit.',
+        'Net worth charts, spending treemaps, recurring transaction detection, and duplicate warnings. Computed live as you edit.',
     },
     {
       title: 'Editor you\'ll enjoy',
@@ -127,7 +127,7 @@ function Features(): ReactNode {
     {
       title: 'No lock-in, ever',
       description:
-        'Compatible with hledger and ledger. Stop using Giduru any time — your data still works with free, open-source CLI tools.',
+        'Compatible with hledger and ledger. Stop using Giduru any time. Your data still works with free, open-source CLI tools.',
     },
   ];
 
@@ -159,8 +159,8 @@ function Philosophy(): ReactNode {
         Just a record that outlasts empires.
       </p>
       <p>
-        Giduru carries that ethos forward. Your ledger is plain text —
-        human-readable, portable, and yours forever.
+        Giduru carries that ethos forward. Your ledger is plain text.
+        Human-readable, portable, and yours forever.
       </p>
       <div className="philosophy__links">
         <Link className="button button--primary button--lg" href="https://app.giduru.com?demo=1">

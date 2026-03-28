@@ -6,7 +6,7 @@ description: Built-in financial analysis that updates live as you edit.
 
 # Analysis Views
 
-Giduru includes seven built-in analysis views that compute live from your journal files. No setup required — just open a vault and switch to any view.
+Giduru includes seven built-in analysis views that compute live from your journal files. No setup required. Just open a vault and switch to any view.
 
 ## Net Worth Over Time
 
@@ -28,7 +28,7 @@ Giduru uses fuzzy matching on amount, date, and description to detect transactio
 
 ## Recurring Transactions
 
-Detects patterns in your transactions — weekly, biweekly, monthly, and semi-monthly recurrences. Useful for tracking subscriptions, rent, salary, and other regular items.
+Detects patterns in your transactions: weekly, biweekly, monthly, and semi-monthly recurrences. Useful for tracking subscriptions, rent, salary, and other regular items.
 
 ## Posting Search
 

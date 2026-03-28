@@ -6,7 +6,7 @@ description: How Giduru works with folders of journal files.
 
 # Vaults
 
-A vault is any folder on your filesystem that contains hledger journal files. Giduru doesn't impose any particular structure — use whatever organization makes sense to you.
+A vault is any folder on your filesystem that contains hledger journal files. Giduru doesn't impose any particular structure. Use whatever organization makes sense to you.
 
 ## Supported file types
 
@@ -19,7 +19,7 @@ Giduru recognizes files with these extensions:
 
 ### Single file
 
-The simplest approach — one file for everything:
+The simplest approach. One file for everything:
 
 ```
 my-finances/

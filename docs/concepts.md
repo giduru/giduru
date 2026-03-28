@@ -31,7 +31,7 @@ If you delete Giduru's cache or switch tools entirely, you lose nothing. Everyth
 
 ## The hledger format
 
-Giduru uses the [hledger journal format](https://hledger.org/hledger.html#journal-format) — a plain-text double-entry accounting format. A simple transaction looks like:
+Giduru uses the [hledger journal format](https://hledger.org/hledger.html#journal-format), a plain-text double-entry accounting format. A simple transaction looks like:
 
 ```
 2026-03-25 Grocery Store

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 8
 title: Alternatives
-description: Free tools you can use with the same file format — no lock-in, ever.
+description: Free tools you can use with the same file format. No lock-in, ever.
 ---
 
 # Alternatives
@@ -40,7 +40,7 @@ ledger -f ledger.journal register
 
 ## Any text editor
 
-Since your financial data is plain text, you can always edit it with any text editor — VS Code, Vim, Emacs, Notepad, or anything else. Many editors have hledger syntax highlighting plugins available.
+Since your financial data is plain text, you can always edit it with any text editor. VS Code, Vim, Emacs, Notepad, whatever you prefer. Many editors have hledger syntax highlighting plugins available.
 
 ## Why this matters
 

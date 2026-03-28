@@ -6,7 +6,7 @@ description: A quick reference for the hledger journal format used by Giduru.
 
 # hledger Journal Format
 
-Giduru uses the [hledger journal format](https://hledger.org/hledger.html#journal-format) — an open, plain-text double-entry accounting format. This page covers the basics.
+Giduru uses the [hledger journal format](https://hledger.org/hledger.html#journal-format), an open, plain-text double-entry accounting format. This page covers the basics.
 
 ## Transactions
 
@@ -18,7 +18,7 @@ A transaction starts with a date and description, followed by two or more postin
     assets:checking           -$42.50
 ```
 
-The last posting amount can be omitted — hledger (and Giduru) will infer it:
+The last posting amount can be omitted. hledger (and Giduru) will infer it:
 
 ```
 2026-03-25 Farmer's Market
