@@ -7,7 +7,6 @@ function Hero(): ReactNode {
   return (
     <header className="hero hero--giduru">
       <div className="container">
-        <div className="hero-badge">file &gt; app</div>
         <h1 className="hero__title">GIDURU</h1>
         <p className="hero__tagline">
           Your finances. <em>Your files.</em> Your way.
