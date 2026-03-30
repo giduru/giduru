@@ -1,6 +1,7 @@
 import type {ReactNode} from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
+import {IoLogoApple, IoLogoAndroid, IoGlobeOutline, IoDesktopOutline, IoTerminalOutline, IoCloudDownloadOutline} from 'react-icons/io5';
 
 function Hero(): ReactNode {
   return (
@@ -13,7 +14,6 @@ function Hero(): ReactNode {
         </p>
         <p className="hero__subtitle">
           A personal finance app built on plain-text ledger files.
-          Ships on iOS, Android, web, desktop, CLI, and as a PWA.
           No databases, no lock-in, no proprietary formats. Just your
           ledger, on your machine, in your control.
         </p>
@@ -58,6 +58,32 @@ function Hero(): ReactNode {
         </div>
       </div>
     </header>
+  );
+}
+
+function Platforms(): ReactNode {
+  const platforms = [
+    {icon: IoLogoApple, label: 'iOS'},
+    {icon: IoLogoAndroid, label: 'Android'},
+    {icon: IoGlobeOutline, label: 'Web'},
+    {icon: IoDesktopOutline, label: 'Desktop'},
+    {icon: IoTerminalOutline, label: 'CLI'},
+    {icon: IoCloudDownloadOutline, label: 'PWA'},
+  ];
+
+  return (
+    <section className="platforms">
+      <div className="container">
+        <div className="platforms__row">
+          {platforms.map((p) => (
+            <div className="platforms__item" key={p.label}>
+              <p.icon className="platforms__icon" />
+              <span className="platforms__label">{p.label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -126,11 +152,6 @@ function Features(): ReactNode {
         'No cloud sync, no accounts, no tracking. Giduru reads files from your disk and never phones home.',
     },
     {
-      title: 'Runs everywhere',
-      description:
-        'iOS, Android, web, desktop, CLI, and PWA. Same ledger files, every platform.',
-    },
-    {
       title: 'No lock-in, ever',
       description:
         'Compatible with hledger and ledger. Stop using Giduru any time. Your data still works with free, open-source CLI tools.',
@@ -187,6 +208,7 @@ export default function Home(): ReactNode {
       description="A file-first personal finance app built on plain text. Own your data forever with Giduru.">
       <Hero />
       <main>
+        <Platforms />
         <HowItWorks />
         <Features />
         <Philosophy />
