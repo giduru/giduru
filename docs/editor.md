@@ -1,16 +1,42 @@
 ---
 sidebar_position: 6
-title: Editor
-description: A CodeMirror-powered editor built for hledger journals.
+slug: /using-giduru/workspace-and-editor
+title: Workspace and Editor
+description: How the Giduru workspace, file explorer, and editor fit together.
 ---
 
-# Editor
+# Workspace And Editor
 
-Giduru's editor is built on [CodeMirror 6](https://codemirror.net/) with a custom hledger language mode. It's designed to make editing journal files fast and error-free.
+Giduru is not just a text box for ledger files. The workspace is designed so you can move between files, views, diagnostics, and settings without losing track of the underlying journal.
+
+## File Explorer
+
+Open a vault and you get a normal file tree rooted at that folder.
+
+Use it to:
+
+- browse your journal files and folders
+- open files in tabs
+- create files and folders inside the vault
+- reorganize the vault as it grows
+
+The important constraint is that the file tree is real. You are not browsing an app-owned abstraction. You are browsing the actual vault.
+
+## Tabs And Split Panes
+
+You can open multiple files at once and keep analysis views beside them.
+
+Typical layouts:
+
+- one column for the active journal, one column for **Accounts Balance**
+- one column for a card ledger, one column for **Recurring Transactions**
+- one column for `main.journal`, one column for settings or a search view
+
+This matters because Giduru is built around editing and understanding the ledger at the same time.
 
 ## Syntax highlighting
 
-The editor understands hledger syntax. Dates, descriptions, account names, amounts, comments, directives, and tags are all highlighted distinctly.
+The editor understands hledger syntax. Dates, descriptions, account names, amounts, comments, directives, and tags are highlighted distinctly.
 
 ## Autocomplete
 
@@ -25,29 +51,47 @@ As you type, Giduru validates your journal entries:
 
 Errors appear inline as you edit, so you catch mistakes immediately.
 
-## Tabs and columns
-
-Open multiple journal files in tabs. Split the editor into side-by-side columns to view or edit two files at once. Giduru resolves `include` directives across files, so your analysis reflects the full picture even when your ledger spans many files.
-
 ## Command palette
 
-Press `Cmd+Shift+P` (or `Ctrl+Shift+P`) to open the command palette. Search for any action, setting, or view by name.
+Use the command palette to jump to actions, files, and views without leaving the keyboard.
+
+The current defaults are command-oriented rather than editor-style:
+
+- `Ctrl+G Ctrl+G` opens the command palette
+- `Ctrl+G P` opens the file picker
 
 ## File picker
 
-Press `Cmd+P` (or `Ctrl+P`) to quickly open any file in your vault by name. Fuzzy matching helps you find files fast, even in large vaults.
+The file picker gives you fuzzy search over the vault so you can jump directly to the file you want.
 
-## Hotkeys
+This becomes important once the ledger stops being a single-file toy.
 
-Common actions have keyboard shortcuts. Open the command palette and type "keyboard shortcuts" to see the full list. Hotkeys are customizable.
+## Saving And Disk Changes
+
+Giduru tracks unsaved changes per tab and writes back to the real file when you save.
+
+Because the vault is just files on disk, Giduru also has to deal with external changes. If another tool edits a file while it is open, the workspace can surface that fact instead of pretending it owns the file.
+
+## Vim, Appearance, And Settings
+
+Editor behavior is configurable through settings stored in `.giduru/*.json`.
+
+That includes:
+
+- font size
+- line numbers
+- Vim mode
+- word wrap
+- tab size
+- theme and workspace preferences
+
+For more, see [Settings and Hotkeys](/docs/using-giduru/settings-and-hotkeys).
+
+Common actions have keyboard shortcuts, and the bindings are configurable. See [Settings and Hotkeys](/docs/using-giduru/settings-and-hotkeys).
 
 ## Theme
 
 Switch between light mode, dark mode, or follow your system preference. The editor theme updates to match.
-
-## LSP
-
-Giduru includes a built-in language server for hledger journals. It powers autocomplete, diagnostics, go-to-definition for accounts, and hover information. No external setup required.
 
 ## Vim keybindings
 

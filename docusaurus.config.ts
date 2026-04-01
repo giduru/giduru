@@ -79,7 +79,7 @@ const config: Config = {
           title: 'Product',
           items: [
             {label: 'Launch App', href: 'https://app.giduru.com'},
-            {label: 'Documentation', to: '/docs/introduction'},
+            {label: 'Documentation', to: '/docs/getting-started/what-is-giduru'},
           ],
         },
         {

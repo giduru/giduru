@@ -1,12 +1,13 @@
 ---
 sidebar_position: 10
-title: Alternatives
-description: Free tools you can use with the same file format. No lock-in, ever.
+slug: /guides/working-with-other-tools
+title: Working With Other Tools
+description: Giduru is designed to coexist with hledger, Ledger, Git, and normal text editors.
 ---
 
-# Alternatives
+# Working With Other Tools
 
-Giduru is built on the hledger/ledger plain-text format. This means your data works with a whole ecosystem of free, open-source tools. You're never locked in.
+Giduru is built on the hledger and Ledger plain-text journal format. That means your data already belongs to a larger ecosystem. You do not need to choose between Giduru and every other tool.
 
 ## hledger
 
@@ -41,6 +42,15 @@ ledger -f ledger.journal register
 ## Any text editor
 
 Since your financial data is plain text, you can always edit it with any text editor. VS Code, Vim, Emacs, Notepad, whatever you prefer. Many editors have hledger syntax highlighting plugins available.
+
+## Git and backups
+
+Because the vault is just files, normal software hygiene works:
+
+- use Git for history and review
+- sync with your preferred backup system
+- archive the ledger without an export step
+- diff changes before and after large cleanups
 
 ## Why this matters
 

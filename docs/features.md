@@ -1,58 +1,85 @@
 ---
 sidebar_position: 3
-title: Features
-description: Everything Giduru gives you out of the box.
+slug: /guides/ways-to-use-giduru
+title: Ways to Use Giduru
+description: Practical patterns for using Giduru as a serious personal finance workspace.
 ---
 
-# Features
+# Ways To Use Giduru
 
-A quick overview of what Giduru can do. Each feature links to a deeper page.
+This page is intentionally about workflows, not feature inventory.
 
-## Editor
+Giduru is most useful when you treat it as a durable personal finance workspace: plain-text accounting files, plus an editor and analysis environment that make those files practical to live in.
 
-A full [CodeMirror 6](https://codemirror.net/) editor built for hledger journals. [Read more.](/docs/editor)
+## Maintain A Real Personal Ledger
 
-- Syntax highlighting for the hledger format
-- Autocomplete for account names and descriptions
-- Real-time validation with inline error markers
-- Tabs and side-by-side columns
-- Command palette (`Cmd+Shift+P`)
-- File picker (`Cmd+P`)
-- Customizable hotkeys
-- Vim keybindings
-- Light, dark, and system themes
-- Built-in LSP for go-to-definition, hover info, and diagnostics
-- File watching for external edits
+If you want something more rigorous than a budgeting app, Giduru gives you a place to keep:
 
-## Analysis
+- assets and liabilities in one model
+- income and expenses in the same journal
+- transfers, loan payments, and credit card activity without special cases
+- a net worth history that falls out of the ledger naturally
 
-Seven built-in views that update live as you edit. [Read more.](/docs/analysis)
+This is the core use case: serious personal finance using double-entry bookkeeping, without giving up plain text.
 
-- Net worth over time (multi-commodity)
-- Accounts treemap
-- Account balance table
-- Possible duplicate detection
-- Recurring transaction detection
-- Posting search with filters
-- Full-text transaction search
+## Edit And Analyze Side By Side
 
-## Vaults
+One of Giduru's strongest patterns is keeping a journal file open in one pane and an analysis view open in another.
 
-Open any folder as a vault. [Read more.](/docs/vaults)
+Examples:
 
-- Supports `.journal`, `.hledger`, and `.ledger` files
-- Resolves `include` directives across files
-- No required folder structure
-- Starter ledger for empty vaults
+- review a checking account file while watching **Accounts Balance**
+- clean up category usage while keeping **Accounts Treemap** open
+- inspect recurring subscriptions while editing card transactions
+- verify a correction by watching **Net Worth Over Time** or **Monthly Expenses**
 
-## Platforms
+This is what makes Giduru feel different from a CLI-only workflow.
 
-Giduru runs on iOS, Android, web, desktop, CLI, and as a PWA. Same ledger files, every platform. [Install.](/docs/install)
+## Use It With Git
 
-## Plugins
+Because the ledger is plain text, Git becomes a normal part of the workflow instead of an afterthought.
 
-Extend Giduru with plugins. [Read more.](/docs/plugins)
+Useful patterns:
 
-## Plain text, no lock-in
+- commit after large reconciliations
+- keep branches for major chart-of-accounts restructures
+- diff changes to verify imported or rewritten transactions
+- keep a durable audit trail of how the ledger evolved
 
-Your data is hledger-compatible plain text. Works with hledger, ledger, and any text editor. Nothing to export. Nothing to migrate. [See alternatives.](/docs/alternatives)
+## Keep Giduru And CLI Tools In The Same Stack
+
+Giduru does not replace the surrounding plain-text accounting ecosystem. A good workflow is often:
+
+- use Giduru for interactive editing, search, diagnostics, and visual analysis
+- use hledger or Ledger for shell scripts, batch reports, and automation
+- use your normal text editor when that is the fastest tool for a one-off change
+
+That is not fragmentation. It is the benefit of owning your data in an open format.
+
+## Grow The Ledger Gradually
+
+You do not need a perfect accounting system on day one.
+
+A good progression looks like this:
+
+1. start with one main file and a small chart of accounts
+2. split into multiple files when navigation gets annoying
+3. add account declarations for stronger validation
+4. add commodity and price data when analysis needs it
+5. keep refining the vault structure as the ledger matures
+
+## Good Fits For Giduru
+
+Giduru is especially well suited if you want to:
+
+- replace fragile spreadsheets with a durable ledger
+- track net worth across multiple institutions
+- keep household finances in one coherent system
+- learn plain-text accounting without giving up a good interface
+- own your data and avoid app lock-in
+
+## Read This Next
+
+- [Structuring Your Vault](/docs/guides/structuring-your-vault)
+- [Workspace and Editor](/docs/using-giduru/workspace-and-editor)
+- [Working With Other Tools](/docs/guides/working-with-other-tools)

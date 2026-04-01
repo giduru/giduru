@@ -1,33 +1,62 @@
 ---
 sidebar_position: 1
-title: Introduction
-description: Giduru is a file-first personal finance app built on plain-text hledger journals.
+slug: /getting-started/what-is-giduru
+title: What Is Giduru?
+description: Giduru is a file-first personal finance workspace for plain-text double-entry accounting.
 ---
 
-# What is Giduru?
+# What Is Giduru?
 
-Giduru is a personal finance application that treats your files as the source of truth. Instead of storing your financial data in a proprietary database, Giduru works directly with [hledger](https://hledger.org) journal files. Plain text files that you own, control, and can edit with any tool.
+Giduru is a personal finance app for people who want the power of real accounting without giving up ownership of their data.
 
-Think of it like Obsidian, but for your finances.
+Instead of storing your financial history in a proprietary database, Giduru works directly with plain-text journals in the [hledger](https://hledger.org) and Ledger ecosystem. Your finances live in files on disk, not rows in someone else's backend.
 
-## file > app
+Think of it like a serious accounting workspace with the ergonomics of a modern editor and the durability of plain text.
 
-Most finance apps own your data. They store it in their database, in their format, behind their paywall. If they shut down or you stop paying, your financial history disappears.
+## Personal Finance With Real Accounting
 
-Giduru is different. Your ledger files are plain text on your filesystem. They work with hledger, ledger, or any text editor. Giduru gives you a better way to work with them, but it's never the only way.
+Giduru is not just an expense tracker with prettier charts. It is built around double-entry bookkeeping.
+
+That means you can model:
+
+- assets like checking, savings, retirement accounts, and property
+- liabilities like credit cards, loans, and mortgages
+- income, expenses, equity, transfers, and price data
+- multi-file journals that grow with you over time
+
+For personal finance, that matters. Double-entry gives you a system that can explain where money came from, where it went, and what it means for your net worth.
+
+## `file > app`
+
+Most finance apps make the app canonical and your data incidental. The records live in their system, in their format, behind their product.
+
+Giduru flips that around. Your files are canonical. The app is a tool for reading, editing, validating, and analyzing them.
+
+That gives you a few guarantees:
+
+- your ledger stays readable outside Giduru
+- Git, backup, and sync workflows stay normal because they operate on real files
+- derived views can be rebuilt at any time from the underlying journal
+- if you stop using Giduru, your data still works with hledger, Ledger, and plain text editors
 
 ## Core principles
 
-- **Plain text, full control.** Your financial data lives in `.journal` files. Human-readable, git-friendly, and yours forever.
-- **You own your data.** No cloud sync, no accounts, no tracking. Giduru reads files from your disk and never phones home.
-- **No lock-in.** Uses the same format as hledger and ledger. Stop using Giduru any time. Your data still works with free CLI tools.
-- **Live analysis.** Net worth charts, spending treemaps, recurring transaction detection, and duplicate warnings. Computed live as you edit.
-- **Runs everywhere.** iOS, Android, web, desktop, CLI, and PWA. Same ledger files, every platform.
+- **Plain text, full control.** Your financial data lives in `.journal`, `.hledger`, or `.ledger` files that you can inspect, diff, and back up.
+- **Local-first.** Giduru reads files from your vault and computes analysis locally from the current draft state.
+- **Real accounting semantics.** Includes, directives, commodities, price data, and balancing rules are part of the model, not decoration.
+- **Analysis beside editing.** You can edit a ledger file and inspect the effect immediately in charts, tables, and search views.
+- **No lock-in.** Your data works with hledger, Ledger, and any text editor that can open a file.
 
-## How it works
+## What You Do In Giduru
 
 1. **Open a vault.** Point Giduru at a folder containing your hledger journal files.
-2. **Edit your journals.** Use the built-in CodeMirror editor with syntax highlighting, autocomplete, and real-time validation.
-3. **See your finances.** Analysis views update live as you type, showing net worth trends, spending breakdowns, recurring patterns, and more.
+2. **Edit your journals.** Use the built-in editor with syntax highlighting, autocomplete, and live validation.
+3. **Inspect the results.** Open analysis views for balances, net worth, recurring transactions, holdings, monthly expenses, and more.
 
-Your files are never modified unless you explicitly save. All analysis is derived from your plain-text files and computed locally.
+Your files are never replaced by an app-owned format. Giduru is there to make file-based accounting practical, not to take possession of it.
+
+## Read This Next
+
+- [Open and Install Giduru](/docs/getting-started/open-and-install)
+- [Core Ideas](/docs/getting-started/core-ideas)
+- [Demo Tutorial](/docs/getting-started/demo-tutorial)

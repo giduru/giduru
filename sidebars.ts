@@ -5,17 +5,22 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Getting Started',
-      items: ['introduction', 'install', 'features', 'quickstart', 'concepts'],
+      items: ['introduction', 'install', 'concepts', 'quickstart'],
+    },
+    {
+      type: 'category',
+      label: 'Guides',
+      items: ['features', 'vaults', 'alternatives'],
     },
     {
       type: 'category',
       label: 'Using Giduru',
-      items: ['editor', 'analysis', 'vaults', 'plugins'],
+      items: ['editor', 'analysis', 'plugins'],
     },
     {
       type: 'category',
-      label: 'Reference',
-      items: ['hledger-format', 'alternatives'],
+      label: 'Language Reference',
+      items: ['hledger-format', 'account-directives'],
     },
   ],
 };

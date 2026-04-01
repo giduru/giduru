@@ -20,7 +20,7 @@ function Hero(): ReactNode {
           <Link className="button button--primary button--lg" href="https://app.giduru.com?demo=1">
             Try the Demo
           </Link>
-          <Link className="button button--outline button--lg" to="/docs/introduction">
+          <Link className="button button--outline button--lg" to="/docs/getting-started/what-is-giduru">
             Read the Docs
           </Link>
         </div>
