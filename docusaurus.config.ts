@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Giduru',
   customFields: {
-    POSTHOG_API_KEY: process.env.POSTHOG_API_KEY ?? '',
     POSTHOG_HOST: process.env.POSTHOG_HOST ?? '',
+    POSTHOG_PROJECT_TOKEN: process.env.POSTHOG_PROJECT_TOKEN ?? '',
   },
   clientModules: [require.resolve('./src/posthog-analytics.ts')],
   tagline: 'Your finances, your files, your way',

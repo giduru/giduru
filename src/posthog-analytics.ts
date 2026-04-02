@@ -1,23 +1,23 @@
 import posthog from 'posthog-js';
 import siteConfig from '@generated/docusaurus.config';
 
-const { POSTHOG_API_KEY, POSTHOG_HOST } = (siteConfig.customFields ?? {}) as {
-  POSTHOG_API_KEY?: string;
+const { POSTHOG_HOST, POSTHOG_PROJECT_TOKEN } = (siteConfig.customFields ?? {}) as {
   POSTHOG_HOST?: string;
+  POSTHOG_PROJECT_TOKEN?: string;
 };
 
 if (typeof window !== 'undefined') {
   const posthogConfigStatus = {
-    apiKeyLength: POSTHOG_API_KEY?.length ?? 0,
-    hasApiKey: Boolean(POSTHOG_API_KEY),
+    hasProjectToken: Boolean(POSTHOG_PROJECT_TOKEN),
     hasHost: Boolean(POSTHOG_HOST),
     host: POSTHOG_HOST || '(missing)',
+    projectTokenLength: POSTHOG_PROJECT_TOKEN?.length ?? 0,
   };
 
   console.info('[giduru] PostHog config', posthogConfigStatus);
 
-  if (POSTHOG_API_KEY && POSTHOG_HOST) {
-    posthog.init(POSTHOG_API_KEY, {
+  if (POSTHOG_PROJECT_TOKEN && POSTHOG_HOST) {
+    posthog.init(POSTHOG_PROJECT_TOKEN, {
       api_host: POSTHOG_HOST,
       capture_pageview: true,
       capture_pageleave: true,
