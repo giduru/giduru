@@ -2,6 +2,7 @@ import type {ReactNode} from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import {IoLogoApple, IoLogoAndroid, IoGlobeOutline, IoDesktopOutline, IoTerminalOutline, IoCloudDownloadOutline} from 'react-icons/io5';
+import {posthog} from '../posthog-analytics';
 
 function Hero(): ReactNode {
   return (
@@ -17,10 +18,12 @@ function Hero(): ReactNode {
           ledger, on your machine, in your control.
         </p>
         <div className="hero-buttons">
-          <Link className="button button--primary button--lg" href="https://app.giduru.com?demo=1">
+          <Link className="button button--primary button--lg" href="https://app.giduru.com?demo=1"
+            onClick={() => posthog.capture('demo started', {source: 'hero'})}>
             Try the Demo
           </Link>
-          <Link className="button button--outline button--lg" to="/docs/getting-started/what-is-giduru">
+          <Link className="button button--outline button--lg" to="/docs/getting-started/what-is-giduru"
+            onClick={() => posthog.capture('docs opened', {source: 'hero'})}>
             Read the Docs
           </Link>
         </div>
@@ -189,10 +192,12 @@ function Philosophy(): ReactNode {
         Human-readable, portable, and yours forever.
       </p>
       <div className="philosophy__links">
-        <Link className="button button--primary button--lg" href="https://app.giduru.com?demo=1">
+        <Link className="button button--primary button--lg" href="https://app.giduru.com?demo=1"
+          onClick={() => posthog.capture('demo started', {source: 'homepage_philosophy_teaser'})}>
           Try the Demo
         </Link>
-        <Link className="button button--outline button--lg" to="/philosophy">
+        <Link className="button button--outline button--lg" to="/philosophy"
+          onClick={() => posthog.capture('philosophy read', {source: 'homepage_philosophy_teaser'})}>
           Read the Philosophy
         </Link>
       </div>

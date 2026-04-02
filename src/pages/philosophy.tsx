@@ -1,6 +1,7 @@
 import type {ReactNode} from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
+import {posthog} from '../posthog-analytics';
 
 function Header(): ReactNode {
   return (
@@ -306,10 +307,12 @@ function FreeForever(): ReactNode {
         </blockquote>
 
         <div className="philosophy-page__cta">
-          <Link className="button button--primary button--lg" href="https://app.giduru.com?demo=1">
+          <Link className="button button--primary button--lg" href="https://app.giduru.com?demo=1"
+            onClick={() => posthog.capture('demo started', {source: 'philosophy_page'})}>
             Try the Demo
           </Link>
-          <Link className="button button--outline button--lg" to="/docs/getting-started/what-is-giduru">
+          <Link className="button button--outline button--lg" to="/docs/getting-started/what-is-giduru"
+            onClick={() => posthog.capture('docs opened', {source: 'philosophy_page'})}>
             Read the Docs
           </Link>
         </div>
